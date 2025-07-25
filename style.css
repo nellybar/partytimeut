@@ -43,23 +43,16 @@ body {
     position: relative;
     height: 100vh;
     color: white;
-    text-align: center; /* Changed to center for all devices */
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Changed to center vertically */
-    align-items: center; /* Center horizontally for flex items */
-    padding: 2rem 1rem; /* Adjusted padding for better responsiveness */
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
     overflow: hidden;
-  }
-  .hero video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-  }
+    /* Remove video background, set up for image background */
+    background-color: #333; /* Fallback background color if image fails to load */
+}
   .hero h1, .hero p, .hero .cta {
     z-index: 1;
     /* Removed margin-left: auto; margin-right: auto; max-width: 90%; here */
